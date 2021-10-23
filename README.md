@@ -15,10 +15,15 @@
 
 为了让大家更方便的观看学习，我给大家准备了该系列视频列表：
 [【我要做开源】华为大佬亲授，Vue DevUI开源指南01：提交我的第一次pr](https://www.bilibili.com/video/BV1GU4y1N7eC/)
+
 [【我要做开源】华为大佬亲授，Vue DevUI开源指南02：做一个有模有样的Tree组件](https://www.bilibili.com/video/BV1su411f7a1/)
+
 [【我要做开源】华为大佬亲授，Vue DevUI开源指南03：学会"单测"才会有安全感！完成Tree组件！](https://www.bilibili.com/video/BV1Z64y187dR/)
+
 [【我要做开源】华为大佬亲授，Vue DevUI开源指南04：组件库工程化建设之项目初始化、jsx支持](https://www.bilibili.com/video/BV1xR4y1H7yT/)
+
 [【我要做开源】华为大佬亲授，Vue DevUI开源指南05：开源组件库中的文档建设，vitepress使用过程中的踩坑经历，克服这些困难你将收获多多！](https://www.bilibili.com/video/BV1r44y1x7sk/)
+
 [【我要做开源】华为大佬亲授，Vue DevUI开源指南06：开源组件库中的CLI脚手架建设，再也不用担心重复工作和代码风格混乱了！](https://www.bilibili.com/video/BV1QQ4y1i7VV/)
 
 欢迎小伙们快乐学习的同时动动小手，三连一波鼓励一下村长吧！

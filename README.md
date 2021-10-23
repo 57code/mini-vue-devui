@@ -14,6 +14,7 @@
 ## 历次直播
 
 为了让大家更方便的观看学习，我给大家准备了该系列视频列表：
+
 [【我要做开源】华为大佬亲授，Vue DevUI开源指南01：提交我的第一次pr](https://www.bilibili.com/video/BV1GU4y1N7eC/)
 
 [【我要做开源】华为大佬亲授，Vue DevUI开源指南02：做一个有模有样的Tree组件](https://www.bilibili.com/video/BV1su411f7a1/)

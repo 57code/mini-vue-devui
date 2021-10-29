@@ -8,7 +8,10 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "register:components": "vitepress-rc"
+    "register:components": "vitepress-rc",
+    "cli:dev": "esbuild --bundle ./devui-cli/index.js --format=cjs --platform=node --outdir=./lib --watch",
+    "cli:build": "esbuild --bundle ./devui-cli/index.js --format=cjs --platform=node --outdir=./lib",
+    "cli": "node ./lib/index.js create"
   },
   "dependencies": {
     "vue": "^3.2.16"
@@ -16,6 +19,11 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
     "@vitejs/plugin-vue-jsx": "^1.2.0",
+    "commander": "^8.3.0",
+    "esbuild": "^0.13.10",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.2.0",
+    "kolorist": "^1.5.0",
     "sass": "^1.43.4",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",

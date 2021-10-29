@@ -7,7 +7,8 @@
     "serve": "vite preview",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "register:components": "vitepress-rc"
   },
   "dependencies": {
     "vue": "^3.2.16"
@@ -19,6 +20,7 @@
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vitepress": "^0.20.0",
+    "vitepress-theme-demoblock": "^1.2.6",
     "vue-tsc": "^0.3.0"
   }
 }

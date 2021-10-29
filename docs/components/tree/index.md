@@ -1,6 +1,11 @@
 # Tree 树
 
-<d-tree :data="data"></d-tree>
+:::demo 渲染一棵基本树
+
+```vue
+<template>
+  <d-tree :data="data"></d-tree>
+</template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
@@ -54,3 +59,5 @@ export default defineComponent({
   }
 })
 </script>
+```
+:::

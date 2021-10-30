@@ -2,7 +2,7 @@
 
 ## 前言
 
-大家好，我是[村长](https://space.bilibili.com/480140591)，欢迎关注我的公众号「[村长学前端](https://space.bilibili.com/480140591)」一起学习。
+大家好，我是[村长](https://space.bilibili.com/480140591)，欢迎关注我的公众号「[村长学前端](https://gitee.com/57code/picgo/raw/master/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E6%A0%87%E5%87%86%E8%89%B2%E7%89%88.png)」一起学习。
 
 ## 朴素的请求
 请给本项目和[Vue DevUI](https://gitee.com/devui/vue-devui)点个star鼓励一下村长和kagol吧！

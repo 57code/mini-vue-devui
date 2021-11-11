@@ -5,8 +5,8 @@ const vue = require("@vitejs/plugin-vue");
 const vueJsx = require("@vitejs/plugin-vue-jsx");
 const fsExtra = require("fs-extra");
 
-const entryDir = path.resolve(__dirname, "../../devui");
-const outputDir = path.resolve(__dirname, "../../build");
+const entryDir = path.resolve(__dirname, "../../devui-vue/devui");
+const outputDir = path.resolve(__dirname, "../../../build");
 
 // 单组件按需构建
 const buildSingle = async (name) => {

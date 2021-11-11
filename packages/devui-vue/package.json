@@ -12,9 +12,7 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "register:components": "vitepress-rc",
-    "test": "jest",
-    "build:components": "node ./devui-cli/commands/build.js",
-    "build:lib": "yarn build:components && cp package.json build && cp README.md build"
+    "test": "jest"
   },
   "dependencies": {
     "vue": "^3.2.16"

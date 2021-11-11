@@ -23,7 +23,9 @@
   "scripts": {
     "cli:dev": "esbuild --bundle ./index.js --format=cjs --platform=node --outdir=./lib --watch",
     "cli:build": "esbuild --bundle ./index.js --format=cjs --platform=node --outdir=./lib",
-    "cli": "node ./lib/index.js create"
+    "cli": "node ./lib/index.js create",
+    "build:components": "node ../devui-cli/commands/build.js",
+    "build:lib": "yarn build:components && cp package.json build && cp README.md build"
   },
   "bugs": {
     "url": "https://github.com/57code/mini-vue-devui/issues"

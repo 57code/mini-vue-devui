@@ -1,0 +1,21 @@
+{
+  "name": "mini-vue-devui",
+  "version": "0.0.1",
+  "description": "the mini version of vue devui for study",
+  "keywords": [],
+  "author": "57code <yt0379@sohu.com>",
+  "license": "ISC",
+  "main": "vue-devui.umd.js",
+  "module": "vue-devui.es.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/57code/mini-vue-devui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/57code/mini-vue-devui/issues"
+  },
+  "homepage": "https://github.com/57code/mini-vue-devui#readme"
+}

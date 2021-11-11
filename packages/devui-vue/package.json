@@ -12,9 +12,6 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "register:components": "vitepress-rc",
-    "cli:dev": "esbuild --bundle ./devui-cli/index.js --format=cjs --platform=node --outdir=./lib --watch",
-    "cli:build": "esbuild --bundle ./devui-cli/index.js --format=cjs --platform=node --outdir=./lib",
-    "cli": "node ./lib/index.js create",
     "test": "jest",
     "build:components": "node ./devui-cli/commands/build.js",
     "build:lib": "yarn build:components && cp package.json build && cp README.md build"

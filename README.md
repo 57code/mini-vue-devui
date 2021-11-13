@@ -26,7 +26,7 @@ git clone https://github.com/57code/mini-vue-devui.git
 全局安装`yarn`和`lerna`
 ```
 npm i -g yarn lerna
-``
+```
 
 安装项目依赖
 ```

@@ -1,11 +1,11 @@
 {
-  "name": "mini-vue-devui",
+  "name": "vue-devui",
   "version": "0.0.0",
   "main": "vue-devui.umd.js",
   "module": "vue-devui.es.js",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vitepress dev docs",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "docs:dev": "vitepress dev docs",

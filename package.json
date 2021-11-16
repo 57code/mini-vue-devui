@@ -5,19 +5,9 @@
   "module": "vue-devui.es.js",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "register:components": "vitepress-rc",
-    "cli:dev": "esbuild --bundle ./devui-cli/index.js --format=cjs --platform=node --outdir=./lib --watch",
-    "cli:build": "esbuild --bundle ./devui-cli/index.js --format=cjs --platform=node --outdir=./lib",
-    "cli": "node ./lib/index.js create",
-    "test": "jest",
-    "build:components": "node ./devui-cli/commands/build.js",
-    "build:lib": "yarn build:components && cp package.json build && cp README.md build"
+    "dev": "lerna exec --scope vue-devui yarn dev",
+    "build": "lerna exec --scope vue-devui yarn build",
+    "build:lib": "lerna exec --scope vue-devui yarn build:lib"
   },
   "dependencies": {
     "vue": "^3.2.16"

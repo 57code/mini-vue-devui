@@ -12,27 +12,61 @@
 
 ## 项目描述
 
-此项目是华为开源组件库[Vue DevUI](https://gitee.com/devui/vue-devui)的mini版，是我和[DevUI](https://devui.design/)项目负责人[Kagol](https://github.com/kagol)老师一起做的B站直播节目【[我要做开源](https://www.bilibili.com/video/BV1GU4y1N7eC)】中产出的学习项目，所以它不能用于实际项目开发。它的主要作用是带大家学习做开源的方法和如何建设一个组件库。这是一个长期的过程：我们要搭建项目基础架构，解决开发过程中遇到的各种各样的问题，设计和实现一些典型的组件。所以你完全可以把自己掌握学到的知识提交上来，一起完善这个项目。
+此项目是华为开源组件库[Vue DevUI](https://gitee.com/devui/vue-devui)的mini版，是我和[DevUI](https://devui.design/)项目负责人[Kagol](https://github.com/kagol)老师一起做的B站直播节目【[我要做开源](https://space.bilibili.com/480140591/channel/seriesdetail?sid=411659)】中产出的学习项目，所以它不能用于实际项目开发。它的主要作用是带大家学习做开源的方法和如何建设一个组件库。这是一个长期的过程：我们要搭建项目基础架构，解决开发过程中遇到的各种各样的问题，设计和实现一些典型的组件。所以你完全可以把自己掌握学到的知识提交上来，一起完善这个项目。
 
+## 快速开始
 
+### 第一步：clone 源代码
+```
+git clone https://github.com/57code/mini-vue-devui.git
+```
+
+### 第二步：安装依赖
+
+全局安装`yarn`和`lerna`
+```
+npm i -g yarn lerna
+```
+
+安装项目依赖
+```
+yarn
+```
+
+### 第三步：本地启动
+```
+lerna exec --scope mini-vue-devui yarn dev
+```
+
+## 使用 mini-vue-devui
+
+### 第一步：创建一个`vite`+`vue3`的工程
+```
+yarn create vite vite-project --template vue
+```
+
+### 第二步：安装 mini-vue-devui
+```
+yarn add mini-vue-devui
+```
+
+### 第三步：使用 mini-vue-devui
+
+修改`src/main.ts`文件
+```
+// 引入 MiniDevUI
+import MiniDevUI from 'mini-vue-devui'
+
+createApp(App)
+.use(MiniDevUI) // 使用 MiniDevUI
+.mount('#app')
+```
 
 ## 历次直播
 
 为了让大家更方便的观看学习，我给大家准备了该系列视频列表：
 
-[【我要做开源】华为大佬亲授，Vue DevUI开源指南01：提交我的第一次pr](https://www.bilibili.com/video/BV1GU4y1N7eC/)
-
-[【我要做开源】华为大佬亲授，Vue DevUI开源指南02：做一个有模有样的Tree组件](https://www.bilibili.com/video/BV1su411f7a1/)
-
-[【我要做开源】华为大佬亲授，Vue DevUI开源指南03：学会"单测"才会有安全感！完成Tree组件！](https://www.bilibili.com/video/BV1Z64y187dR/)
-
-[【我要做开源】华为大佬亲授，Vue DevUI开源指南04：组件库工程化建设之项目初始化、jsx支持](https://www.bilibili.com/video/BV1xR4y1H7yT/)
-
-[【我要做开源】华为大佬亲授，Vue DevUI开源指南05：开源组件库中的文档建设，vitepress使用过程中的踩坑经历，克服这些困难你将收获多多！](https://www.bilibili.com/video/BV1r44y1x7sk/)
-
-[【我要做开源】华为大佬亲授，Vue DevUI开源指南06：开源组件库中的CLI脚手架建设，再也不用担心重复工作和代码风格混乱了！](https://www.bilibili.com/video/BV1QQ4y1i7VV/)
-
-[【我要做开源】华为大佬亲授，Vue DevUI开源指南07：大串讲，项目创建+配置+文档系统+组件开发+测试，mini-vue-devui欢迎star！](https://www.bilibili.com/video/BV1SQ4y1q7jD)
+[【我要做开源】Vue DevUI开源指南](https://space.bilibili.com/480140591/channel/seriesdetail?sid=411659)
 
 欢迎小伙们快乐学习的同时动动小手，三连一波鼓励一下村长吧！
 
@@ -41,22 +75,7 @@
 
 下面是Kagol在掘金发布的直播相关文档，大家学习之余，多多点赞鼓励他吧！
 
-[【我要做开源】Vue DevUI开源指南01：提交我的第一次pr](https://juejin.cn/post/7009273646884028430)
-
-[【我要做开源】Vue DevUI开源指南02：实现一个能渲染多层节点的Tree组件](https://juejin.cn/post/7011535488171376671)
-
-[【我要做开源】Vue DevUI开源指南03：如何给 tree 组件增加展开/收起功能](https://juejin.cn/post/7015023354847428645)
-
-[【我要做开源】Vue DevUI开源指南04：使用Vite搭建一个支持TypeScript/JSX的Vue3组件库工程](https://juejin.cn/post/7017101147865350158)
-
-[【我要做开源】Vue DevUI开源指南05：给Vue3组件库添加VitePress文档系统](https://juejin.cn/post/7019314307682795534)
-
-[【我要做开源】Vue DevUI开源指南06：手把手带你开发一个脚手架](https://juejin.cn/post/7021915468046811144)
-
-[【我要做开源】Vue DevUI开源指南07：手把手带你从0到1搭建一个vue3组件库](https://juejin.cn/post/7024443197854056456)
-
-[【我要做开源】Vue DevUI开源指南07-2：给 vue devui 组件库项目增加单元测试](https://juejin.cn/post/7023409900239716382)
-
+[组件库从0到1](https://juejin.cn/column/6961051124031815687)
 
 ## 致谢
 
@@ -64,7 +83,7 @@
 
 kagol：[github](https://github.com/kagol)、[掘金](https://juejin.cn/user/712139267650141)
 
-wailen：[github](https://github.com/SituC)、掘金
+wailen：[github](https://github.com/SituC)、[掘金](https://juejin.cn/user/2928754707411629)
 
 iel：[github](https://github.com/RootWater)、[掘金](https://juejin.cn/user/1538972011203662)
 

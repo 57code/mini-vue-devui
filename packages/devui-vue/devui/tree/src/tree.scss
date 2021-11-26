@@ -1,0 +1,81 @@
+$devui-text-weak: var(--devui-text-weak, #575d6c);
+$devui-font-size: var(--devui-font-size, 12px);
+$devui-list-item-selected-bg: var(--devui-list-item-selected-bg, #e9edfa);
+$devui-list-item-hover-bg: var(--devui-list-item-hover-bg, #f2f5fc);
+$devui-border-radius: var(--devui-border-radius, 2px);
+$devui-animation-duration-fast: var(--devui-animation-duration-fast, 100ms);
+$devui-animation-ease-in-smooth: var(
+  --devui-animation-ease-in-smooth,
+  cubic-bezier(0.645, 0.045, 0.355, 1)
+);
+$devui-disabled-text: var(--devui-disabled-text, #adb0b8);
+
+.devui-text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.devui-tree-node {
+  color: $devui-text-weak;
+  line-height: 1.5;
+  white-space: nowrap;
+  position: relative;
+
+  .devui-tree-node__content {
+    display: inline-flex;
+    align-items: center;
+    font-size: $devui-font-size;
+    padding-right: 10px;
+    width: 100%;
+    border-radius: $devui-border-radius;
+    padding-left: 6px;
+    transition: color $devui-animation-duration-fast
+        $devui-animation-ease-in-smooth,
+      background-color $devui-animation-duration-fast
+        $devui-animation-ease-in-smooth;
+
+    &.active {
+      background-color: $devui-list-item-selected-bg;
+      text-decoration: none;
+      border-color: transparent;
+    }
+
+    &:not(.active):hover {
+      background-color: $devui-list-item-hover-bg;
+    }
+  }
+
+  .devui-tree-node__content--value-wrapper {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+
+    .toggle-disabled {
+      cursor: not-allowed;
+
+      svg.svg-icon rect {
+        stroke: $devui-disabled-text;
+      }
+
+      svg.svg-icon path {
+        fill: $devui-disabled-text;
+      }
+    }
+  }
+
+  .devui-tree-node__title {
+    @extend .devui-text-ellipsis;
+
+    margin-left: 5px;
+    display: inline-block;
+    border: 1px dashed transparent;
+    border-radius: $devui-border-radius;
+    max-width: 100%;
+
+    &:not(.disabled) {
+      cursor: pointer;
+    }
+  }
+}

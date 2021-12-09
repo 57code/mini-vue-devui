@@ -10,8 +10,8 @@ export default defineComponent({
   name: 'DTree',
   props: treeProps,
   emits: [],
-  setup(props: TreeProps, ctx) {
-    const { data } = toRefs(props)
+  setup(props: TreeProps, { slots }) {
+    const { data, checkable } = toRefs(props)
     const { openedData, toggle } = useToggle(data.value)
     const { nodeClassNameReflect, handleInitNodeClassNameReflect, handleClickOnNode } = useHighlightNode()
 
@@ -22,11 +22,16 @@ export default defineComponent({
 
     const renderIcon = (item: TreeItem) => {
       return item.children
-        ? <span class={item.disableToggle && 'toggle-disabled'}>
+        ? <span 
+            class={item.disableToggle && 'toggle-disabled'}
+            onClick={() => toggle(item)}>
           {
-            item.open
-              ? <IconOpen class='mr-xs' onClick={() => toggle(item)} />
-              : <IconClose class='mr-xs' onClick={() => toggle(item)} />
+            // 增加插槽逻辑
+            slots.icon
+              ? slots.icon(item)
+              : item.open
+                ? <IconOpen class='mr-xs' />
+                : <IconClose class='mr-xs' />
           }
         </span>
         : <Indent />
@@ -46,6 +51,10 @@ export default defineComponent({
             <div class="devui-tree-node__content--value-wrapper">
               {/* 折叠图标 */}
               {renderIcon(item)}
+              {/* 复选框 */}
+              {/* { checkable.value && <d-checkbox v-model={item.checked} />} */}
+              { checkable.value && <input type="checkbox" v-model={item.checked} />}
+              {/* 文本 */}
               <span class={[
                 'devui-tree-node__title',
                 item.disabled && 'select-disabled']}>

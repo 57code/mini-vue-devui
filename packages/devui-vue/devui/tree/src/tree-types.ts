@@ -5,6 +5,7 @@ export interface TreeItem {
   children?: TreeData;
   disableToggle?: boolean;
   disabled?: boolean;
+  checked?: boolean, // 是否勾选
   [key: string]: any;
 }
 
@@ -14,6 +15,11 @@ export const treeProps = {
   data: {
     type: Array as PropType<TreeData>,
     default: () => [],
+  },
+  // 新增
+  checkable: {
+    type: Boolean,
+    default: false
   },
 } as const;
 

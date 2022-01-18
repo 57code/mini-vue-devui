@@ -35,7 +35,7 @@ yarn
 
 ### 第三步：本地启动
 ```
-lerna exec --scope mini-vue-devui yarn dev
+lerna exec --scope vue-devui yarn dev
 ```
 
 ## 使用 mini-vue-devui

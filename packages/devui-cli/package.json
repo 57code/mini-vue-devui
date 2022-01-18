@@ -30,5 +30,13 @@
   "bugs": {
     "url": "https://github.com/57code/mini-vue-devui/issues"
   },
-  "homepage": "https://github.com/57code/mini-vue-devui#readme"
+  "homepage": "https://github.com/57code/mini-vue-devui#readme",
+  "devDependencies": {
+    "commander": "^8.3.0",
+    "esbuild": "^0.13.10",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.2.0",
+    "kolorist": "^1.5.0",
+    "lerna": "^4.0.0"
+  }
 }
